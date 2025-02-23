@@ -1,24 +1,42 @@
 package com.ty.beans;
 
-public class Address {
-	private String Location;
-	private int PinCode;
-	private String State;
+public class Student {
 	
-	public void setLocation(String location) {
-		Location = location;
-	}
-	public void setPinCode(int pinCode) {
-		PinCode = pinCode;
-	}
-	public void setState(String state) {
-		State = state;
-	}
+	private String Name;
+	private int Rollno;
+	private Address address;
 	
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return " "+Location+", "+PinCode+" - "+State;
+	public String getName() {
+		return Name;
 	}
+
+	public void setName(String name) {
+		Name = name;
+	}
+
+	public int getRollno() {
+		return Rollno;
+	}
+
+	public void setRollno(int rollno) {
+		Rollno = rollno;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
 	
+	
+	
+	public void Display()
+	{
+		System.out.println("Name :"+Name);
+		System.out.println("Rollno :"+Rollno);
+		System.out.println("Address :"+address);
+	}
 }
